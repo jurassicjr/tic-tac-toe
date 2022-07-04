@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { shade } from "polished";
 
 export const Container = styled.div`
   display: flex;
@@ -20,5 +21,9 @@ export const Container = styled.div`
     border-radius: 30px;
     font-size: 3.2rem;
     border: solid 1px #6f6f6f;
+
+    &:hover {
+      background: ${shade(0.2, "#ff9000")};
+    }
   }
 `;
