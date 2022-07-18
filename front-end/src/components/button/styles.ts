@@ -1,7 +1,11 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { shade } from "polished";
 
-export const Container = styled.div`
+interface IContainerProps {
+  playerRound: "x" | "o" | "";
+}
+
+export const Container = styled.div<IContainerProps>`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,6 +25,18 @@ export const Container = styled.div`
     border-radius: 30px;
     font-size: 3.2rem;
     border: solid 1px #6f6f6f;
+
+    ${(props) =>
+      props.playerRound === "o" &&
+      css`
+        color: #9b0606;
+      `}
+
+    ${(props) =>
+      props.playerRound === "x" &&
+      css`
+        color: #002dcc;
+      `}
 
     &:hover {
       background: ${shade(0.2, "#ff9000")};

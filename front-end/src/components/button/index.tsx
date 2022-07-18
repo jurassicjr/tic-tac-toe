@@ -3,11 +3,17 @@ import { Container } from "./styles";
 
 interface IButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   buttonType: "submit" | "reset" | "button";
+  playerRound?: "x" | "o" | "";
   label: string;
 }
-const Button = ({ buttonType, label, ...rest }: IButtonProps) => {
+const Button = ({
+  buttonType,
+  label,
+  playerRound = "",
+  ...rest
+}: IButtonProps) => {
   return (
-    <Container>
+    <Container playerRound={playerRound}>
       <button type={buttonType} {...rest}>
         {label}
       </button>
