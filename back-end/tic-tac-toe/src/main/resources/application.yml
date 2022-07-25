@@ -1,0 +1,7 @@
+quarkus:
+  application:
+    name: "TIC-TAC-TOE"
+    version: 1.0.0
+  http:
+    port: 2222
+
