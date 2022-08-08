@@ -1,4 +1,4 @@
-package net.lyncas;
+package net.lyncas.dtos;
 
 import net.lyncas.enums.TicTacToe;
 

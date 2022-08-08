@@ -21,4 +21,5 @@ public class Game {
     private EnGameStatuses status;
     private int[][] board;
     private TicTacToe winner;
+    private boolean isAIGame = false;
 }

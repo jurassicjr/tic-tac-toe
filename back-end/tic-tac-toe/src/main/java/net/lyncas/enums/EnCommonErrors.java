@@ -1,6 +1,5 @@
 package net.lyncas.enums;
 
-import io.netty.util.collection.ByteObjectHashMap;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
@@ -17,6 +16,8 @@ public enum EnCommonErrors {
     NO_GAMES_AVAILABLE("Não há jogos disponíveis para você se conectar"),
     GAME_FINISHED("Esse jogo já finalizou"),
     WRONG_COORDINATE("Coordenada fora do grid do jogo"),
-    CELL_ALREADY_USED("Posição de célula já jogada");
+    CELL_ALREADY_USED("Posição de célula já jogada"),
+    INVALID_USERNAME("Nome de usuário inválido"),
+    SESSION_INVALID("Sessão não existente");
     private String value;
 }
